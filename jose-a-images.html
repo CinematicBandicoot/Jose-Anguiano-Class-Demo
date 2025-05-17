@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jose-anguiano-finalweb.css">
+    <title>The image tag</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jose-a-headings-tag.html">Headings</a>
+            <a href="jose-a-images.html">Images</a>
+            <a href="jose-a-list-tags.html">Lists</a>
+            <a href="jose-a-paragraph-tag.html">Paragraphs</a>
+            <a href="jose-a-table-tag.html">Tables</a>
+        </nav>
+    </header>
+    <div>
+<h1>&lt;img&gt;</h1>
+<h1>The image tag</h1>
+<p>The HTML &lt;img&gt; tag is used to embed images in a web page. It is a self-closing (void) element, meaning it</p>
+<p>does not have a closing tag. The &lt;img&gt; tag is essential for adding visual content to web pages and supports</p>
+<p>various attributes for customization.</p>
+<h2>basic syntax</h2>
+<p>&lt;img src="image.jpg" alt="Description of the image"&gt;</p>
+<ul>
+<li>src (Source): Specifies the image file location (URL or relative path).</li>
+<li>&lt;alt (Alternative text): Provides descriptive text if the image fails to load, improving accessibility and
+    SEO.</li>
+</ul>
+<h2>Common Attributes of the &lt;img&gt; Tag</h2>
+<h3>Setting Image Dimensions</h3>
+<p>You can define the width and height in pixels or percentages.</p>
+<p>&lt;img src="photo.jpg" alt="A scenic view" width="300" height="200"&gt;</p>
+<p><i>Best practice: Use CSS (max-width: 100%) instead of fixed widths to make images responsive.</i></p>
+<h3>Responsive Images with srcset</h3>
+<p>The srcset attribute allows browsers to load different images based on screen size, improving performance.</p>
+<p>&lt;img src="default.jpg" srcset="small.jpg 480w, medium.jpg 1024w, large.jpg 1920w" sizes="</p>
+<p>(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1920px" alt="A mountain landscape"&gt;</p>
+<i>The browser selects the best image based on device resolution.</i>
+<h3>Using loading="lazy" for Performance</h3>
+<p>The loading="lazy" attribute defers image loading until it's needed, improving page speed.<p>
+<p>&lt;img src="nature.jpg" alt="Beautiful nature" loading="lazy"&gt;</p>
+<h3>Making Images Clickable</h3>
+<p>You can wrap an &lt;img&gt; inside an &lt;a&gt; tag to create a clickable image.</p>
+<p>&lt;a href="https://example.com"&gt;</p>
+<p>&lt;img src="logo.png" alt="Company Logo"&gt;
+<p>&lt;/a&gt;</p>
+<h3>Using title for Tooltip</h3>
+<p>The title attribute displays a tooltip when hovering over the image.</p>
+<p>&lt;img src="icon.png" alt="Settings icon" title="Click for settings"&gt;</p>
