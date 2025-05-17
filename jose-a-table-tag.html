@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jose-anguiano-flexsec.css">
+    <title>The table tag</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jose-a-headings-tag.html">Headings</a>
+            <a href="jose-a-images.html">Images</a>
+            <a href="jose-a-list-tags.html">Lists</a>
+            <a href="jose-a-paragraph-tag.html">Paragraphs</a>
+            <a href="jose-a-table-tag.html">Tables</a>
+        </nav>
+    </header>
+    <div>
+<h1>&lt;table&gt;</h1>
+<h1>the table Tag</h1>
+    
+    <p>The HTML &lt;table&gt; tag is used to create structured tables for displaying data in rows and columns. It helps</p>
+    <p>organize content in a grid format, making it easier to present tabular information.</p>
+    
+    <h2>Basic Syntax</h2>
+    
+    <p>&lt;table&gt;</p>
+        <p>&lt;tr&gt;</p>
+            <p>&lt;th&gt;Header 1&lt;/th&gt;</p>
+            <p>&lt;th&gt;Header 2&lt;/th&gt;</p> 
+        <p>&lt;/tr&gr;</p>
+        <p>&lt;tr&gt;</p>
+            <p>&lt;td>Row 1, Column 1&lt;/td&gt;</p>
+            <p>&lttd&gt;Row 1, Column 2&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr&gt;</p>
+    <p>&lt;td&gt;Row 2, Column 1&lt;/td&gt;</p>
+    <p>&lt;td&gt;Row 2, Column 2&lt;/td&gt;</p>
+    <p>&lt;/tr&gt;</p>    
+    <p>&lt;/table&gt;</p>
+    
+    <h4>Explanation:</h4>
+    
+    <p>&lt;table&gt;: Defines the table.</p>
+    
+    <p>&lt;tr&gt; (Table Row): Represents a row in the table.</p>
+    
+    <p>&lt;th&gt; (Table Header): Defines a header cell (bold & centered by default).</p>
+    
+    <p>&lt;td&gt; (Table Data): Defines a standard data cell.</p>
+    
+    <h2>Common Table Tags and Attributes</h2>
+    
+    <h3>&lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; – Table Structure</h3>
+    
+    <p>These tags group table content for better organization and accessibility.</p>
+    
+    <p>&lt;table&gt;</p>   
+    <p>&lt;thead&gt;</p>
+    <p>&lt;tr&gt;</p>
+    <th>Product</th>
+    <th>Price</th>
+    <p>&lt;/tr&gt;</p>
+    <p>&lt;/thead&gt;</p>
+    <p>&lt;tbody\&gt;</p>
+    <p>&lt;tr&gt;</p>
+    <p>&lt;td&gt;Apple&lt;/td&gt;</p>
+    <p>&lt;td&gt;$1&lt;/td&gt;</p>
+    <p>&lt;/tr&gt;</p>
+    <p>&lt;tr&gt;</p>
+    <p>&lt;td&gt;Banana&lt;/td&gt;</p>
+    <p>&lt;td&gt;$0.50&lt;/td&gt;</p>
+    <p>&lt;/tr&gt;</p>
+    <p>&lt;/tbody&gt;</p>
+    <p>&lt;tfoot&gt;</p>
+    <p>&lt;tr&gt;</p>
+    <p>&lt;td&gt;Total&lt;/td&gt;</p>
+    <p>&lt;td&gt;$1.50&lt;/td&gt;</p>
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;/tfoot&gt;</p>
+    
+    <p>&lt;/table&gt;</p>
+    
+    <h3>colspan and rowspan – Merging Cells</h3>
+    
+    <p>These attributes merge multiple columns or rows into one.</p>
+    
+    <h4>colspan (Column Span) – Merges cells horizontally.</h4>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;td colspan="2"&gt;Merged Columns&lt;/td&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <h4>rowspan (Row Span) – Merges cells vertically.</h4>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;td rowspan="2"&gt;Merged Rows&lt;/td&gt;</p>
+    
+    <p>&lt;td&gt;Row 1&lt;/td&gt;</p>
+    
+    <p>&lt;/tr&gt;
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;td&gt;Row 2&lt;/td&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <h3>&lt;caption&gt; – Table Title</h3>
+    
+    <p>The &lt;caption&gt; tag provides a title for the table.</p>
+    
+    <p>&lt;table&gt;</p>
+    
+    <p>&lt;caption&gt;Product Price List&lt;/caption&gt;</p>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;th&gt;Item&lt;/th&gt;</p>
+    
+    <p>&lt;th&gt;Price&lt;/th&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;td&gt;Notebook&lt;/td&gt;</p>
+    
+    <p>&lt;td&gt;$5&lt;/td&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;/table&gt;</p>
+    
+    <h3>4. &lt;colgroup&gt; and &lt;col&gt; – Column Styling</h3>
+    
+    <p>These tags allow you to style specific columns.</p>
+    
+    <p>&lt;table&gt;</p>
+    
+    <p>&lt;colgroup&gt;</p>
+    
+    <p>&lt;col style="background-color: lightgray;"&gt;
+    
+    <p>&lt;col style="background-color: white;"&gt;</p>
+    
+    <p>&lt;/colgroup&gt;</p>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;th&gt;Item&lt;/th&gt;</p>
+    
+    <p>&lt;th&gt;Price&lt;/th&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;td&gt;Pen&lt;/td&gt;</p>
+    
+    <p>&lt;td&gt;$1&lt;/td&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;/table&gt;</p>
+    
+    <h4>Example: Full Table with Styling</h4>
+    
+    <p>&lt;table border="1" cellpadding="5" cellspacing="0"&gt;</p>
+    
+    <p>caption&gt;Employee Details&lt;/caption&gt;</p>
+    
+    <p>&lt;thead&gt;</p>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;th&gt;Name&lt;/th&gt;</p>
+    
+    <p>&lt;th&gt;Department&lt;/th&gt;</p>
+    
+    <p>&lt;th&gt;Salary&lt;/th&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;/thead&gt;</p>
+    
+    <p>&lt;tbody&gt;</p>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;td&gt;John Doe&lt;/td&gt;</p>
+    
+    <p>&lt;td&gt;IT&lt;/td&gt;</p>
+    
+    <p>&lt;td&gt;$5000&lt;/td&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;tr&gt;</p>
+    
+    <p>&lt;td&gt;Jane Smith&lt;/td&gt;</p>
+    
+    <p>&lt;td&gt;HR&lt;/td&gt;</p>
+    
+    <p>&lt;td&gt;$4500&lt;/td&gt;</p>
+    
+    <p>&lt;/tr&gt;</p>
+    
+    <p>&lt;/tbody&gt;</p>
+    
+    <p>&lt;/table&gt;</p>
+    
+    <h2>Additional Attributes:</h2>
+    
+    <p>border – Adds a border around the table.</p>
+    
+    <p>cellpadding – Adds spacing inside table cells.</p>
+    
+    <p>cellspacing – Adds spacing between table cells.</p>
