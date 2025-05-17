@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jose-anguiano-final-project.css">
+    <title>The Anchor Tag</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jose-a-headings-tag.html">Headings</a>
+            <a href="jose-a-images.html">Images</a>
+            <a href="jose-a-list-tags.html">Lists</a>
+            <a href="jose-a-paragraph-tag.html">Paragraphs</a>
+            <a href="jose-a-table-tag.html">Tables</a>
+        </nav>
+    </header>
+    <div>
+        <h1>&lt;ul&gt;</h1>
+        <h1>&lt;ol&gt;</h1>
+        <h1>&lt;dl&gt;</h1>
+        <h1>List Tags</h1>
+        <p>HTML provides three types of list elements for structuring content:</p>
+        <ul>
+        <li>&lt;ul&gt; (Unordered List) – Displays items with bullet points.</li>
+        <li>&lt;ol&gt; (Ordered List) – Displays items with numbers or letters.</li>
+        <li>&lt;dl&gt; (Description List) – Used for terms and definitions.</li>
+        </ul>
+        <h2>Unordered List (&lt;ul&gt;)</h2>
+        <p>An unordered list displays items with bullet points (default).</p>
+        <h3>Syntax:</h3>
+        <p>&lt;ul&gt;</p>
+        <p>&lt;li&gt;Apple&lt;/li&gt;</p>
+        <p>&lt;li&gt;Banana&lt;/li&gt;</p>
+        <p>&lt;li&gt;Cherry&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <h3>Key Tags:</h3>
+        <p>&lt;ul&gt; – Wraps the list items.</p>
+        <p>&lt;li&gt; – Represents each list item.</p>
+        <h2>Ordered List (&lt;ol&gt;)</h2>
+        <p>An ordered list displays items with a sequence (numbers, letters, or Roman numerals).</p>
+        <h3>Syntax:</h3>
+        <p>&lt;ol&gt;</p>
+        <p>&lt;li&gt;Step 1&lt;/li&gt;</p>
+        <p>&lt;li&gt;Step 2&lt;/li&gt;</p>
+        <p>&lt;li&gt;Step 3&lt;/li&gt;</p>
+        <p>&lt;ol&gt;</p>
+        <h3>Key Tags:</h3>
+        <p>&lt;ol&gt; – Wraps the ordered list.</p>
+        <p>&lt;li&gt; – Represents each list item.</p>
+        <h3>Common Attributes:</h3>
+        <p>type – Specifies the numbering style:</p>
+        <p>&lt;ol type="A"&gt; &lt;!-- A, a, I, i, 1 --></p>
+        <p>&lt;li&gt;First&lt;/li&gt;</p>
+        <p>&lt;li&gt;Second&lt;/li&gt;</p>
+        <p>&lt;/ol&gt;</p>
+        start – Sets the starting number:
+        <p>&lt;ol&gt; start="5"&gt;</p>
+        <p>&lt;li&gt;Item 5&lt;/li&gt;</p>
+        <p>&lt;li&gt;Item 6&lt;/li&gt;</p>
+        <p>&lt;/ol&gt;</p>
+        <p>reversed – Displays list in reverse order:</p>
+        <p>&lt;ol reversed&gt;</p>
+            <p>&lt;li&gt;Step 3&lt;/li&gt;</p>
+            <p>&lt;li&gt;Step 2&lt;/li&gt;</p>
+            <p>&lt;li&gt;Step 1&lt;/li&gt;</p>
+            <p>&lt;/ol&gt;</p>
+            <h2>Description List (&lt;dl&gt;)</h2>
+            <p>A description list pairs terms with definitions, commonly used for glossaries or FAQs.</p>
+            <h2>Syntax:</h2>
+            <p>&lt;dl&gt;</p>
+            <p>&lt;dt&gt;HTML&lt;/dtGt;</p>
+            <p>&lt;dd&gt;HyperText Markup Language&lt;/dd&gt;</p>
+            <p>&lt;dt&gt;CSS&lt;/dt&gt;</p>
+            <p>&lt;dd&gt;Cascading Style Sheets<p>&lt;/dd&gt;</p>
+            <p>&lt;/dl&gt;</p>
+            <h3>Key Tags:</h3>
+            <p>&lt;dl&gt; – Wraps the description list.</p>
+            <p>&lt;dt&gt; – Represents the term (definition title).</p>
+            <p>&lt;dd&gt; – Provides the description.</p>
+            <h2>Example: Nested Lists</h2>
+            <p>Lists can be nested inside each other. &lt;ul&gt;</p>
+            <p>&lt;li&gt;Fruits</p>
+            <p>&lt;ul&gt;</p>
+            <p>&lt;li&gt;Apple&lt;/li&gt;</p>
+            <p>&lt;li>Banana&lt;/li&gt;</p>
+            <p>&lt;/ul&gt;</p>
+            <p>&lt;/li&gt;</p>
+            <p>&lt;li&gt;Vegetables</p>
+            <p>&lt;ol&gt;</p>
+            <p>&lt;li&gt;Carrot&lt;/li&gt;</p>
+            <p>&lt;li&gt;Broccoli&lt;/li&gt;</p>
+            <p>&lt;/ol&gt;</p>
+            <p>&lt;/li&gt;</p>
+            <p>&lt;/ul&gt;</p>
+            <h2>Best Practices:</h2>
+            <p>Use &lt;ul&gt; for unordered content (e.g., menus, lists).</p>
+            <p>Use &lt;ol&gt; when the order matters (e.g., steps in a process).</p>
+            <p>Use &lt;dl&gt; for definitions, key-value pairs, or FAQs.</p>
