@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &lt;audio&gt;Tag</title>
+</head>
+<body>
+    <div>
+        <h1>HTML &lt;audio&gt; Tag</h1>
+            <p>The HTML &lt;audio&gt; tag is used to embed audio files in a web page, allowing users to play sounds, music, or</p> 
+            <p>voice recordings directly in their browser. It supports multiple formats and can include built-in playback</p>
+            <p>controls.</p>
+            <h2>Basic Syntax</h2>
+
+            <p>&lt;audio controls&gt;</p>
+            <p>&lt;source src="audio.mp3" type="audio/mpeg"&gt;</p>
+            <p>&lt;source src="audio.ogg" type="audio/ogg"&gt;<p>
+            <p>Your browser does not support the audio element.</p>
+            <p>&lt;/audio&gt;</p>
+            <h3>Explanation:</h3>
+            <p>&lt;audio&gt; – Defines the audio player.</p>
+            <p>&lt;source&gt; – Specifies the audio file with different formats for compatibility.</p>
+            <p><b>Fallback Text</b> - Displays if the browser does not support the &lt;audio&gt; tag.</p>
+            <h2>Common &lt;audio&gt; Attributes</h2>
+            <p>src - Defines the audio file location (alternative to &lt;source&gt;).</p>
+            &lt;audio src="audio.mp3"&gt;
+            <p>controls - Displays built-in audio controls (play, pause, volume).</p>
+            <p>&lt;audio controls&gt;</p>
+            <p>autoplay - Starts playing the audio automatically.</p>
+            <p>&lt;audio autoplay&gt;</p>
+            <p>loop - Repeats the audio indefinitely.</p>
+            <p>&lt;audio loop&gt;</p>
+            <p>muted - Starts the audio with sound muted.</p>
+            <p>&lt;audio muted&gt;</p>
+            <p>preload - Defines how the audio is loaded before playback (auto, metadata, none).</p>
+            <p>&lt;audio preload="metadata"&gt;</p>
+            <H2>Adding Multiple Audio Formats</H2>
+            <p>Different browsers support different audio formats. Providing multiple sources ensures wider compatibility.</p>
+            <p>&lt;audio controls&gt;</p>
+            <p>&lt;source src="audio.mp3" type="audio/mpeg"&gt;</p>
+            <p>&lt;source src="audio.ogg" type="audio/ogg"&gt;</p>
+            <p>Your browser does not support the audio element.</p>
+            <p>&lt;/audio&gt;</p>
+            <h3>Common Audio Formats:</h3>
+            <p>MP3 (audio/mpeg) – Most widely supported.</p>
+            <p>Ogg (audio/ogg) – Open-source format.</p>
+            <p>WAV (audio/wav) – High quality but large file size.</p>
+            <h2>Example: Full Audio Implementation</h2>
+            <p>&lt;audio controls preload="metadata"&gt;</p>
+            <p>&lt;source src="music.mp3" type="audio/mpeg"&gt;</p>
+            <p>&lt;source src="music.ogg" type="audio/ogg"&gt;</p>
+            <p>Your browser does not support the audio element.</p>
+            &lt;/audio&gt;
+            <h2>Summary</h2>
+            <p>&lt;audio&gt; - Defines an audio player.</p>
+            <p>&lt;source&gt; - Provides multiple audio formats for compatibility.</p>
+            

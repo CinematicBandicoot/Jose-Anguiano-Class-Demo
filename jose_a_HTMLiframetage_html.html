@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML iframe Tag</title>
+</head>
+<body>
+    <h1>HTML &lt;iframe&gt; Tag</h1>
+    <p>The HTML &lt;iframe&gt; (Inline Frame) tag is used to embed another webpage or external content within a web</p> 
+    <p>page. It is commonly used for embedding videos, maps, external websites, and interactive widgets.</p>
+    <h2>Basic Syntax</h2>
+    <p>&lt;iframe src="https://example.com" width="600" height="400"&gt;&lt;/iframe&gt;</p>
+    <h3>Explanation:</h3>
+    <ul>
+    <li>&lt;iframe&gt; – Defines the inline frame container.</li>
+    <li>src – Specifies the URL of the content to be embedded.</li>
+    <li>width & height – Define the size of the iframe.</li>
+    </ul>
+    <h2>Common Attributes</h2>
+    <p>src - Specifies the URL of the embedded content.</p>
+    <p>&lt;iframe src="https://example.com"&gt;</p>
+    <p>width & height - Defines the frame size (in pixels or percentage).</p>
+    <p>&lt;iframe width="800" height="600"&gt;</p>
+    <p>frameborder - Specifies whether the iframe has a border (0 removes it).</p>
+    <p>&lt;iframe frameborder="0"&gt;</p>
+    <p>allowfullscreen - Enables fullscreen mode for videos.</p>
+    <p>&lt;iframe allowfullscreen&gt;</p>
+    <p>loading - Controls how the iframe loads (lazy defers loading).</p>
+    <p>&lt;iframe loading="lazy"&gt;</p>
+    <p>referrerpolicy - Controls referrer information sharing.</p>
+    <p>&lt;iframe referrerpolicy="no-referrer"&gt;</p>
+    <p>sandbox - Restricts iframe permissions for security.</p>
+    <p>&lt;iframe sandbox&gt;</p>
+    <h2>Embedding Videos with &lt;iframe&gt;</h2>
+    <h3>Embedding a YouTube Video</h3>
+    <p>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"</p>
+    <p>frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</p>
+    <h4>Key Features:</h4>
+    <ul>
+    <li>Uses /embed/ instead of /watch?v=.</li>
+    <li>frameborder="0" removes the default border.</li>
+    <li>allowfullscreen enables fullscreen playback.</li>
+    </ul>
+    <h4>Embedding a Vimeo Video</h4>
+    <p>&lt;iframe src="https://player.vimeo.com/video/123456789" width="640" height="360"</p>
+    <p>frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt; &lt;/iframe&gt;</p>
+    <h4>Additional Attribute:</h4>
+    <p>allow="autoplay; fullscreen" – Enables autoplay and fullscreen.</p>
+    <h3>Embedding Google Maps</h3>
+    <p>&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151..." width="600" height="450"</p>
+    <p>style="border:0;" allowfullscreen&gt; &lt;/iframe&gt;</p>
+    <p>Use Case: Displays an interactive Google Map.</p>
+    <h3>Security Considerations (sandbox Attribute)</h3>
+    <p>For security reasons, embedding external content can be risky. The sandbox attribute restricts iframe</p>
+    <p>permissions.</p>
+    <p>&lt;iframe src="https://example.com" sandbox&gt;&lt;/iframe&gt;</p>
+    <h4>Common Sandbox Values:</h4>
+    <ul>
+    <li>sandbox="allow-scripts" – Allows scripts to run inside the iframe.</li>
+    <li>sandbox="allow-forms" – Enables form submissions inside the iframe.</li>
+    </ul>
+    <h3>Example: Full Iframe Implementation</h3>
+    <p>&lt;iframe src="https://example.com" width="800" height="600" frameborder="0" loading="lazy"</p>
+    <p>referrerpolicy="no-referrer"&gt;Your browser does not support iframes. &lt;/iframe&gt;</p>
+    <h2>Summary</h2>
+    <p>&lt;iframe&gt; - Defines an inline frame for embedding external content.</p>
+    <p>src - Specifies the content URL.</p>
+    <p>allowfullscreen - Enables fullscreen mode for videos.</p>
+    <p>sandbox - Restricts iframe permissions for security.</p>
